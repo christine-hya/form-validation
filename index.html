@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+</head>
+<body>
+    <form>
+        <div class="tooltip">
+        <label for="newtask">New Task
+            
+        </label>
+        <input type="text" id="newtask" name="newtask">
+        <span class="tooltiptext">Required and must contain no HTML characters</span>
+       
+        </div>
+        <p id="hide" class="hide">Please make sure your task contains no HTML characters html</p>
+        <br>
+        <div class="tooltip">
+        <label for="task description">Task Description</label>
+        <input type="text" id="task description" name="task description">
+        <span class="tooltiptext">Optional</span>
+    </div>
+        <br>
+        <div class="tooltip">
+        <label for="task due date">Set Task Due Date</label>
+        <input type="date" id="task due date" name="task due date">
+        <span class="tooltiptext">Required. Please select a date.</span>
+        </div>
+        <br>
+        <div class="tooltip">
+        <label for="task due time">Set Task Due Time</label>
+        <input type="time" id="task due time" name="task due time">
+        <span class="tooltiptext">Required. Please select a time.</span>
+        </div>
+        <br>
+        <input type="submit" value="Submit" onclick="myValidation();return false">
+    </form>
+    <ul id="myTaskList">
+        
+    </ul>
+
+    <script src="scripts/forms.js"></script>
+</body>
+</html>
